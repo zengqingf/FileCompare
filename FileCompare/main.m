@@ -12,17 +12,10 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
-        
-//        NSString *md5 = [Util md5StringWithPath:@"/Users/zengqingfu/Downloads/charles/破解版/charles/charles_16x16.gif"];
-//        NSLog(@"%@", md5);
-        
-        NSString *pathB = @"/Users/zengqingfu/Downloads/charles/破解版/charles/";
-        NSString *pathA = @"/Users/zengqingfu/Downloads/charles/原版/charles/";
-        
+#warning-此处应该填写需要比对的文件夹
+        NSString *pathA = @"/Users/zengqingfu/Downloads/pathA/";
+        NSString *pathB = @"/Users/zengqingfu/Downloads/pathB/";
         [Util compareFilesWithPathA:pathA pathB:pathB];
-        
-        
     }
     return 0;
 }
